@@ -7,6 +7,32 @@ A digital platform for orthopedic patients to receive guided physical therapy ex
     - Remote consultation via video calls
     - Appointment scheduling
     - Doctor-patient messaging
+
+<h2 align="left">Tools Used:</h2>
+
+![Zendevx Technology](https://github.com/user-attachments/assets/36c979fe-929e-44a4-8958-9c15dc466e35)
+
+
+<h2 align="left">Testing Tools Used:</h2>
+
+![PostMan Github](https://github.com/user-attachments/assets/3381c639-715f-40b9-85d3-08384553ee12)
+
+
+<h2 align="left">Library:</h2>
+
+- bcryptjs
+- connect-mongo
+- body-parser
+- cors
+- dotenv
+- express
+- express-session
+- express-validator
+- jsonwebtoken
+- mongoos
+- nodemon
+- validator
+
 - Development Scope
     
     To develop **OrthoCare**, a digital platform for orthopedic patients, here is a detailed breakdown of the **database structure** and **module functionalities**.
