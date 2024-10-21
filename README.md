@@ -124,14 +124,14 @@ The platform will require a relational database to manage patient data, doctor i
 
 
 
-### h) Messages 
+### h) **Messages**
 
 | **Field Name** | **Type** | **Description** |
 | --- | --- | --- |
-| `message_id` | INT (PK) | Unique message identifier |
-| `sender_id` | INT (FK) | User ID of the message sender |
-| `receiver_id` | INT (FK) | User ID of the message receiver |
-| `message` | TEXT | Content of the message |
+| `message_id` | String | Unique message identifier |
+| `sender_id` | String | User ID of the message sender |
+| `receiver_id` | String | User ID of the message receiver |
+| `message` | String | Content of the message |
 | `timestamp` | TIMESTAMP | Message sent timestamp |
 
 ### 2. **Module Functionalities**
