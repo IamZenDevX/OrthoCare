@@ -41,7 +41,7 @@ A digital platform for orthopedic patients to receive guided physical therapy ex
   To develop OrthoCare, a digital platform for orthopedic patients, here is a detailed breakdown of the database structure and module functionalities.
     
 
-### 1. **Database Structure**
+<h2 align="left">1. Database Structure</h2>
 
 The platform will require a relational database to manage patient data, doctor information, appointments, exercises, and consultations. Below is a proposed database structure with the key tables.
 
