@@ -231,7 +231,7 @@ A secure messaging system allowing doctors and patients to communicate asynchron
 
 ---
 
-### 3. **Development Considerations**
+<h2 align="left"> 3. Development Considerations</h2>
 
 - **Security**: All patient and doctor interactions (appointments, consultations, messaging) must be HIPAA-compliant, ensuring the protection of sensitive health data.
 - **Scalability**: The app should support large numbers of patients and doctors, especially when incorporating video consultations, requiring efficient server scaling.
