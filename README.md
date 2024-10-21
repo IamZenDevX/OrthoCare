@@ -124,7 +124,7 @@ The platform will require a relational database to manage patient data, doctor i
 
 
 
-### h) **Messages **
+### h) Messages 
 
 | **Field Name** | **Type** | **Description** |
 | --- | --- | --- |
