@@ -1,0 +1,37 @@
+{
+  "name": "Ortho Care",
+  "version": "1.0.0",
+  "main": "app.js",
+  "description": "",
+  "homepage": "",
+  "license": "",
+  "author": "",
+  "keywords": [],
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-validator": "^7.1.0",
+    "http-errors": "^2.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.5.1",
+    "nodemailer": "^6.6.1",
+    "nodemon": "^1.19.4",
+    "uuid" :"^10.0.0"
+  },
+  "bugs": {
+    "url": "",
+    "email": ""
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  }
+}
