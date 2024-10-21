@@ -238,7 +238,7 @@ A secure messaging system allowing doctors and patients to communicate asynchron
 - **API Integration**: Integration with video conferencing APIs (e.g., Zoom, WebRTC) and possibly external exercise databases for a rich library of guided therapy.
 - **Push Notifications**
   
-<h2 align="left">🔗 Video Links</h2>
+<h2 align="left">🔗 Video Links:</h2>
 
 [Checkout the  Development Video Using ZenDevX](https://www.notion.so/OrthoCare-106890cc57a3807583d7c153e8340ba3?pvs=21)
 
