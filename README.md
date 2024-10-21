@@ -20,109 +20,111 @@ The platform will require a relational database to manage patient data, doctor i
 
 ---
 
-### a) **Users** (for both patients and doctors) (sign up,forgot pass,login validate,update profile)
-
-| **Field Name** | **Type** | **Description** |  |
-| --- | --- | --- | --- |
-| `user_id` | INT (PK) | Unique user identifier |  |
-| `name` | VARCHAR(255) | User's full name |  |
-| `email` | VARCHAR(255) | User's email address |  |
-| `password` | VARCHAR(255) | Encrypted password | not update  |
-| `role` | ENUM('Patient', 'Doctor', 'Admin') | User role in the system | if doctor entry in doctor db ,not update |
-| `phone` | VARCHAR(20) | Contact number |  |
-| `date_of_birth` | DATE | Date of birth for age tracking |  |
-| `address` | VARCHAR(255) | User's residential address |  |
-| `profile_picture` | VARCHAR(255) | Profile image URL |  |
-| `created_at` | TIMESTAMP | Account creation timestamp |  |
-| `updated_at` | TIMESTAMP | Last updated timestamp |  |
-
----
-
-### b) **Doctors(crud,list)**
-
-| **Field Name** | **Type** | **Description** |  |
-| --- | --- | --- | --- |
-| `doctor_id` | INT (PK) | Unique identifier for doctors |  |
-| `user_id` | INT (FK) | Link to the Users table |  |
-| `specialization` | VARCHAR(255) | Doctor's area of specialization (e.g., orthopedics) | yes |
-| `license_number` | VARCHAR(100) | Medical license number | yes |
-| `experience_years` | INT | Number of years of experience | yes,1 to 5 range |
-| `bio` | TEXT | Short bio of the doctor | contains |
-| `availability` | JSON | Doctor's availability for consultations (e.g., time slots, days) | day and time slot |
-
----
-
-### c) **Patients(crud,list,doctor assign,get assign doctor,get patient list by doctor id)**
+### a) **Users**
 
 | **Field Name** | **Type** | **Description** |
 | --- | --- | --- |
-| `patient_id` | INT (PK) | Unique patient identifier |
-| `user_id` | INT (FK) | Link to the Users table |
-| `medical_history` | TEXT | Patient's medical history (injuries, surgeries, etc.) |
-| `current_condition` | VARCHAR(255) | Current orthopedic condition (e.g., ACL tear) |
-| `assigned_doctor` | INT (FK) | Link to the Doctors table (doctor assigned to the patient) |
+| `user_id` | INT (PK) | Unique user identifier |
+| `name` | String | User's full name |
+| `email` | String | User's email address |
+| `password` | Password | Encrypted password |
+| `role` | ENUM('Patient', 'Doctor', 'Admin') | User role in the system |
+| `phone` | String | Contact number |
+| `date_of_birth` | DATE | Date of birth for age tracking |
+| `address` | String | User's residential address |
+| `profile_picture` | String | Profile image URL |
+| `created_at` | TIMESTAMP | Account creation timestamp |
+| `updated_at` | TIMESTAMP | Last updated timestamp |
 
 ---
 
-### d) **Exercises(crud ,list)**
+### b) **Doctors**
 
 | **Field Name** | **Type** | **Description** |
 | --- | --- | --- |
-| `exercise_id` | INT (PK) | Unique identifier for exercises |
-| `title` | VARCHAR(255) | Exercise title (e.g., "Knee Stretch") |
-| `description` | TEXT | Detailed description of the exercise |
-| `video_url` | VARCHAR(255) | Link to the video demonstrating the exercise |
+| `doctor_id` | String | Unique identifier for doctors |
+| `user_id` | String | Link to the Users table |
+| `specialization` | String | Doctor's area of specialization (e.g., orthopedics) |
+| `license_number` | String | Medical license number |
+| `experience_years` | Number | Number of years of experience |
+| `bio` | String | Short bio of the doctor |
+| `availability` | JSON | Doctor's availability for consultations (e.g., time slots, days) |
+
+---
+
+### c) **Patients**
+
+| **Field Name** | **Type** | **Description** |
+| --- | --- | --- |
+| `patient_id` | String | Unique patient identifier |
+| `user_id` | String | Link to the Users table |
+| `medical_history` | String | Patient's medical history (injuries, surgeries, etc.) |
+| `current_condition` | String | Current orthopedic condition (e.g., ACL tear) |
+| `assigned_doctor` | String | Link to the Doctors table (doctor assigned to the patient) |
+
+---
+
+### d) **Exercises**
+
+| **Field Name** | **Type** | **Description** |
+| --- | --- | --- |
+| `exercise_id` | String | Unique identifier for exercises |
+| `title` | String | Exercise title (e.g., "Knee Stretch") |
+| `description` | String | Detailed description of the exercise |
+| `video_url` | String | Link to the video demonstrating the exercise |
 | `difficulty_level` | ENUM('Easy', 'Moderate', 'Hard') | Difficulty level of the exercise |
-| `target_area` | VARCHAR(255) | Body part targeted (e.g., knee, shoulder) |
-| `duration_minutes` | INT | Estimated time for exercise (in minutes) |
-| `repetitions` | INT | Number of recommended repetitions |
+| `target_area` | String | Body part targeted (e.g., knee, shoulder) |
+| `duration_minutes` | String | Estimated time for exercise (in minutes) |
+| `repetitions` | String | Number of recommended repetitions |
 
 ---
 
-### e) **Patient Exercises (create,get,list,update status,update progress**
+### e) **Patient Exercises**
 
 | **Field Name** | **Type** | **Description** |
 | --- | --- | --- |
-| `patient_exercise_id` | INT (PK) | Unique identifier |
-| `patient_id` | INT (FK) | Link to the Patients table |
-| `exercise_id` | INT (FK) | Link to the Exercises table |
-| `assigned_by` | INT (FK) | Doctor who assigned the exercise (link to Doctors table) |
+| `patient_exercise_id` | String | Unique identifier |
+| `patient_id` | String | Link to the Patients table |
+| `exercise_id` | String | Link to the Exercises table |
+| `assigned_by` | String | Doctor who assigned the exercise (link to Doctors table) |
 | `start_date` | DATE | Start date for the exercise program |
 | `end_date` | DATE | End date for the exercise program |
 | `status` | ENUM('Ongoing', 'Completed', 'Missed') | Current status of the exercise |
-| `progress` | TEXT | Patient’s comments on the progress (pain levels, range of motion) |
+| `progress` | String | Patient’s comments on the progress (pain levels, range of motion) |
 
 ---
 
-### f) **Appointments (create app , ask appointment slot time)**
+### f) **Appointments**
 
 | **Field Name** | **Type** | **Description** |
 | --- | --- | --- |
-| `appointment_id` | INT (PK) | Unique identifier for appointments |
-| `patient_id` | INT (FK) | Link to the Patients table |
-| `doctor_id` | INT (FK) | Link to the Doctors table |
+| `appointment_id` | String | Unique identifier for appointments |
+| `patient_id` | String | Link to the Patients table |
+| `doctor_id` | String | Link to the Doctors table |
 | `appointment_date` | DATETIME | Date and time of the appointment |
 | `consultation_mode` | ENUM('Video', 'In-Person') | Mode of consultation (video or in-person) |
 | `status` | ENUM('Scheduled', 'Completed', 'Cancelled') | Current status of the appointment |
-| `appointment_end_date` |  |  |
+| `appointment_end_date` | DATETIME |  |
 
 ---
 
-### g) **Consultations(crud ,list by 3 id)**
+### g) **Consultations**
 
 | **Field Name** | **Type** | **Description** |
 | --- | --- | --- |
-| `consultation_id` | INT (PK) | Unique identifier for consultations |
-| `patient_id` | INT (FK) | Link to the Patients table |
-| `doctor_id` | INT (FK) | Link to the Doctors table |
-| `appointment_id` | INT (FK) | Link to the Appointments table |
-| `notes` | TEXT | Doctor's notes from the consultation |
-| `prescriptions` | TEXT | Prescriptions or recommendations post-consultation |
-| `video_recording` | VARCHAR(255) | Video recording link (if recorded) |
+| `consultation_id` | String | Unique identifier for consultations |
+| `patient_id` | String | Link to the Patients table |
+| `doctor_id` | String | Link to the Doctors table |
+| `appointment_id` | String | Link to the Appointments table |
+| `notes` | String | Doctor's notes from the consultation |
+| `prescriptions` | String | Prescriptions or recommendations post-consultation |
+| `video_recording` | String | Video recording link (if recorded) |
 
 ---
 
-### h) **Messages (crud ,list by sender id OR receiver id)**
+
+
+### h) **Messages **
 
 | **Field Name** | **Type** | **Description** |
 | --- | --- | --- |
