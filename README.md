@@ -65,7 +65,7 @@ The platform will require a relational database to manage patient data, doctor i
 | `created_at` | TIMESTAMP | Account creation timestamp |
 | `updated_at` | TIMESTAMP | Last updated timestamp |
 
----
+
 
 ### b) **Doctors**
 
@@ -79,7 +79,6 @@ The platform will require a relational database to manage patient data, doctor i
 | `bio` | String | Short bio of the doctor |
 | `availability` | JSON | Doctor's availability for consultations (e.g., time slots, days) |
 
----
 
 ### c) **Patients**
 
@@ -91,7 +90,7 @@ The platform will require a relational database to manage patient data, doctor i
 | `current_condition` | String | Current orthopedic condition (e.g., ACL tear) |
 | `assigned_doctor` | String | Link to the Doctors table (doctor assigned to the patient) |
 
----
+
 
 ### d) **Exercises**
 
@@ -106,7 +105,7 @@ The platform will require a relational database to manage patient data, doctor i
 | `duration_minutes` | String | Estimated time for exercise (in minutes) |
 | `repetitions` | String | Number of recommended repetitions |
 
----
+
 
 ### e) **Patient Exercises**
 
@@ -121,7 +120,6 @@ The platform will require a relational database to manage patient data, doctor i
 | `status` | ENUM('Ongoing', 'Completed', 'Missed') | Current status of the exercise |
 | `progress` | String | Patient’s comments on the progress (pain levels, range of motion) |
 
----
 
 ### f) **Appointments**
 
@@ -135,7 +133,7 @@ The platform will require a relational database to manage patient data, doctor i
 | `status` | ENUM('Scheduled', 'Completed', 'Cancelled') | Current status of the appointment |
 | `appointment_end_date` | DATETIME |  |
 
----
+
 
 ### g) **Consultations**
 
@@ -149,7 +147,7 @@ The platform will require a relational database to manage patient data, doctor i
 | `prescriptions` | String | Prescriptions or recommendations post-consultation |
 | `video_recording` | String | Video recording link (if recorded) |
 
----
+
 
 
 
@@ -163,6 +161,7 @@ The platform will require a relational database to manage patient data, doctor i
 | `message` | String | Content of the message |
 | `timestamp` | TIMESTAMP | Message sent timestamp |
 
+---
 <h2 align="left"> 2. Module Functionalities</h2>
 
 ### a) **Exercise Video Library**
