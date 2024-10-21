@@ -176,7 +176,7 @@ This module provides a searchable library of orthopedic exercises for patients. 
     - Track assigned exercises with start and end dates
     - Completion status and progress tracking for exercises
 
----
+
 
 ### b) **Progress Tracker**
 
@@ -190,7 +190,7 @@ This module helps patients track their recovery progress. Patients can log their
     - Feedback system where patients can share comments or concerns
     - Automated reminders for patients to update their progress
 
----
+
 
 ### c) **Remote Consultation (Video Calls)**
 
@@ -203,7 +203,7 @@ This module enables remote video consultations between patients and doctors, all
     - Option to record consultations for future reference
     - End-to-end encryption for secure communication
 
----
+
 
 ### d) **Appointment Scheduling**
 
@@ -216,7 +216,7 @@ This module allows patients to schedule appointments with their assigned orthope
     - Cancellation and rescheduling functionality
     - Appointment history for patients and doctors
 
----
+
 
 ### e) **Doctor-Patient Messaging**
 
