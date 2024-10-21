@@ -29,9 +29,12 @@ A digital platform for orthopedic patients to receive guided physical therapy ex
 - express-session
 - express-validator
 - jsonwebtoken
-- mongoos
+- mongoose
 - nodemon
 - validator
+- http-errors
+- nodemailer
+- uuid
 
 <h2 align="left">Development Scope</h2>
     
