@@ -38,7 +38,7 @@ A digital platform for orthopedic patients to receive guided physical therapy ex
 
 <h2 align="left">Development Scope</h2>
     
-    To develop **OrthoCare**, a digital platform for orthopedic patients, here is a detailed breakdown of the **database structure** and **module functionalities**.
+  To develop OrthoCare, a digital platform for orthopedic patients, here is a detailed breakdown of the database structure and module functionalities.
     
 
 ### 1. **Database Structure**
