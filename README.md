@@ -163,7 +163,7 @@ The platform will require a relational database to manage patient data, doctor i
 | `message` | String | Content of the message |
 | `timestamp` | TIMESTAMP | Message sent timestamp |
 
-### 2. **Module Functionalities**
+<h2 align="left"> 2. Module Functionalities</h2>
 
 ### a) **Exercise Video Library**
 
