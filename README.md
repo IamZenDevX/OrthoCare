@@ -237,3 +237,26 @@ A secure messaging system allowing doctors and patients to communicate asynchron
 - **Scalability**: The app should support large numbers of patients and doctors, especially when incorporating video consultations, requiring efficient server scaling.
 - **API Integration**: Integration with video conferencing APIs (e.g., Zoom, WebRTC) and possibly external exercise databases for a rich library of guided therapy.
 - **Push Notifications**
+  
+<h2 align="left">🔗 Links</h2>
+
+[**Checkout the  Demo Video using ZenDevX**](https://www.notion.so/NodeJS-Task-Management-c766d777f45f4ef3a850a8ea07e598ee?pvs=21) 
+
+<h2 align="left">Development with ZenDevx:</h2>
+
+<a href="https://www.zendevx.com/" target="blank"><img align="center" src="https://github.com/user-attachments/assets/7dd7220f-e83c-4490-9ac2-beab3bcf8c35" alt="ZenDevX" height="auto" width="auto" /></a>
+
+
+
+<h2 align="left">🐦 Connect with me:</h2>
+         
+ 
+<p align="left">
+
+<a href="https://www.linkedin.com/company/zendevx/" target="blank"><img align="center" src="https://github.com/user-attachments/assets/9a6080ca-4265-43e5-8652-9454651970a9" alt="ZenDevX" height="50" width="50" /></a>
+<a href="https://www.youtube.com/@zendevx" target="blank"><img align="center" src="https://github.com/user-attachments/assets/1beefdd6-fa17-49c9-bde7-e8f30f539b96" alt="ZenDevX" height="50" width="50" /></a>
+<a href="https://www.youtube.com/@zendevx" target="blank"><img align="center" src="https://github.com/user-attachments/assets/f1eeb865-3d23-407a-9a2b-d76b4e85c6dd" alt="ZenDevX" height="50" width="50" /></a>
+</p>
+
+
+I hope you like the project. Thanks for reading :)
