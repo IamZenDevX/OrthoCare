@@ -227,13 +227,7 @@ a safe messaging system allowing asynchronous debate between doctors and patient
     - Search power and message historical performance
     - HIPAA Compliance Based on Safe Data Encryption
 
----
 
-### 3. **Development Considerations**
-
-- **Security**: Every communication between a patient and a doctor appointments, consultations, messaging allows security of confidential medical records by HIPAA-compliant technique.
-- **Scalability**: Particularly with video conferences, which depend on good server scalability, the program should let many doctors and patients to use it.
-- **API Integration**: Combining interaction with video conferences APIs (like Zoom, WebRTC) and maybe outside workout databases creates a large library of guided therapy.
 ---
 
 <h2 align="left"> 3. Development Considerations</h2>
