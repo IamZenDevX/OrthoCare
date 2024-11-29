@@ -27,7 +27,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/", indexfile);  
 
-const dbURI = `mongodb://localhost:27017/`;
+const dbURI = `mongodb+srv://name:password@cluster0.0tq4xsw.mongodb.net/bms?retryWrites=true&w=majority&appName=Cluster0`;
 
 mongoose
 .connect(dbURI)
