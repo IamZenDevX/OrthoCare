@@ -27,7 +27,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use("/", indexfile);  
 
-const dbURI = `mongodb+srv://Vihang:LlN2reduqeSUv9z9@cluster0.0tq4xsw.mongodb.net/ortho_care?retryWrites=true&w=majority&appName=Cluster0`;
+const dbURI = `mongodb://localhost:27017/`;
 
 mongoose
 .connect(dbURI)
